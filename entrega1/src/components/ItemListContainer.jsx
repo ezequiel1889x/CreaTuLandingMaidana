@@ -1,6 +1,13 @@
 export const Button = (props) =>{
+    const handleClick = () =>{
+        console.log('apretaste maquina');
+    }
+    
     return(
-        <button>{props.textoButton}</button>
+        
+            <div style={{display:'flex', justifyContent:'center'}}>
+                 <button onClick={handleClick}>{props.textoButton}</button>
+            </div>        
     )
 }
 
